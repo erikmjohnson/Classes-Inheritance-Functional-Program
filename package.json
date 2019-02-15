@@ -1,0 +1,25 @@
+{
+  "name": "classes-inheritance-functional-program",
+  "version": "1.0.0",
+  "description": "Working on classes",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose --coverage",
+    "test-watch": "jest --watchall --verbose --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erikmjohnson/Classes-Inheritance-Functional-Program.git"
+  },
+  "author": "Erik M. Johnson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erikmjohnson/Classes-Inheritance-Functional-Program/issues"
+  },
+  "homepage": "https://github.com/erikmjohnson/Classes-Inheritance-Functional-Program#readme",
+  "dependencies": {
+    "eslint": "^5.13.0",
+    "jest": "^24.1.0",
+    "start": "^5.1.0"
+  }
+}
