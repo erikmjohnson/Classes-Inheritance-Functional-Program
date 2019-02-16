@@ -1,6 +1,6 @@
 'use strict';
 
-const flyingVehicle = require('../flying-vehicle-class.js');
+const flyingVehicle = require('../../flying_vehicles/flying-vehicle-factory.js');
 
 describe('Flying Vehicle', () => {
 
