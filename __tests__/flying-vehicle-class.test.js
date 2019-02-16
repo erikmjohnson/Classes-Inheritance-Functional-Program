@@ -1,49 +1,49 @@
 'use strict';
 
-const Vehicle = require('../vehicle-class.js');
+const flyingVehicle = require('../flying-vehicle-factory.js');
 
-describe('Vehicles', () => {
+describe('Flying Vehicle', () => {
 
-  describe('Car', () => {
+  describe('Airplane', () => {
 
-    let car = new Vehicle.Car('foo');
+    let airplane = new flyingVehicle.Airplane('foo');
 
-    it('has 4 wheels', () => {
-      expect(car.wheels).toEqual(4);
+    it('Can carry 30 passengers', () => {
+      expect(airplane.passengers).toEqual(30);
     });
 
-    it('can drive', () => {
-      expect(car.drive()).toBeTruthy();
+    it('can fly', () => {
+      expect(airplane.fly()).toBeTruthy();
     });
 
-    it('can stop', () => {
-      expect(car.stop()).toBeTruthy();
+    it('can crash', () => {
+      expect(airplane.crash()).toBeTruthy();
     });
 
-    it('cannot do a wheelie', () => {
-      expect(car.wheelie).toBeUndefined();
+    it('can evade', () => {
+      expect(airplane.evade()).toBeTruthy();
     });
 
   });
 
-  describe('Motorcycle', () => {
+  describe('Helicopter', () => {
 
-    let motorcycle = new Vehicle.Motorcycle('foo');
+    let helicopter = new flyingVehicle.Helicopter('foo');
 
-    it('has 2 wheels', () => {
-      expect(motorcycle.wheels).toEqual(2);
+    it('Can carry 5 passengers', () => {
+      expect(helicopter.passengers).toEqual(5);
     });
 
     it('can drive', () => {
-      expect(motorcycle.drive()).toBeTruthy();
+      expect(helicopter.fly()).toBeTruthy();
     });
 
     it('can stop', () => {
-      expect(motorcycle.stop()).toBeTruthy();
+      expect(helicopter.crash()).toBeTruthy();
     });
 
-    it('cannot do a wheelie', () => {
-      expect(motorcycle.wheelie()).toBeTruthy();
+    it('cannot do a barrel-roll', () => {
+      expect(helicopter.evade).toBeUndefined();
     });
 
   });
