@@ -16,16 +16,49 @@ Vehicle.prototype.stop = () => {
   return 'Stopping';
 };
 // ---------------------------------------------------------------------
-function CarFactory(name,color) {
+function Car(name,color) {
 	// Vinicio - this is suppose to have the same interface as Vehicle,
 	// but it should add the color
 	const newCar = Object.assign(
 			{},
 			{color},
-			new Vehicle(name)
+			{drive},
+			{stop},
+			new Vehicle(name, 4)
 	);
+
+	function drive () {
+		return 'Moving Forward';
+	}
+
+	function stop () {
+		return 'Stopping';
+	}
 	// Vinicio - this is not a "HARD" requirement to have a factory
 	return Object.freeze(newCar);
 }
 
-module.exports = CarFactory;
+function Motorcycle(name) {
+	const newMotorcycle = Object.assign(
+		{},
+		{drive},
+		{stop},
+		{wheelie},
+		new Vehicle(name, 2)
+	);
+	function drive () {
+		return 'Moving Forward';
+	}
+
+	function stop () {
+		return 'Stopping';
+	}
+
+	function wheelie() {
+		return 'Wheee!';
+	}
+
+	return Object.freeze(newMotorcycle);
+}
+
+module.exports = {Car, Motorcycle};
