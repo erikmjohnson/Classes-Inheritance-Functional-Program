@@ -1,4 +1,4 @@
-![CF](http://i.imgur.com/7v5ASc8.png) LAB
+![CF](http://i.imgur.com/7v5ASc8.png) LAB-02
 =================================================
 [![Build Status](https://travis-ci.com/erikmjohnson/Classes-Inheritance-Functional-Program.svg?branch=master)](https://travis-ci.com/erikmjohnson/Classes-Inheritance-Functional-Program)
 
