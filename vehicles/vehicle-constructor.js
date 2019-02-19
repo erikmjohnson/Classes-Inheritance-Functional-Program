@@ -21,7 +21,7 @@ class Vehicle {
 
 
 const Vehicle = function(name, wheels) {
-	// Vinicio - this part will what in classes we call "costructor"
+	// Vinicio - this part is what in classes we call "constructor"
   this.name = name;
   this.wheels = wheels;
 };

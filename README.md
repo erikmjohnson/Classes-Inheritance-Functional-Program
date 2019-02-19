@@ -1,3 +1,6 @@
+![CF](http://i.imgur.com/7v5ASc8.png) LAB
+=================================================
+
 # Classes-Inheritance-Functional-Program
 
 ### Author: JE, EJ
@@ -6,30 +9,29 @@
 * [repo](https://github.com/erikmjohnson/Classes-Inheritance-Functional-Program)
 * [travis]()
 
-#### Documentation
-* [jsdoc](http://xyz.com) (All assignments)
-
 ### Modules
-#### `modulename.js`
+#### `flying-vehicle-class.js`
+#### `flying-vehicle-factory.js`
+#### `sea-creatures-class.js`
+#### `sea-creatures-factory.js`
+#### `vehicle-class.js`
+#### `vehicle-factory.js`
+
 ##### Exported Values and Methods
 
-###### `foo(thing) -> string`
+###### ``
 Usage Notes or examples
 
-###### `bar(array) -> array`
+###### ``
 Usage Notes or examples
 
-### Setup
-#### `.env` requirements
-* `PORT` - Port Number
-* `MONGODB_URI` - URL to the running mongo instance/db
 
 #### Running the app
-* `npm start`
-* Endpoint: `/foo/bar/`
-  * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
-  * Returns a JSON object with xyz in it.
+* 
+* Endpoint: ``
+  * Returns ....
+* Endpoint: ``
+  * Returns ....
   
 #### Tests
 * How do you run tests?
